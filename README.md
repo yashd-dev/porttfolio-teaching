@@ -1,47 +1,25 @@
-# Astro Starter Kit: Minimal
+# My Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+👋 Welcome to my portfolio page! This is where I showcase my projects and skills.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Projects
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Here are some of the projects I have worked on:
 
-## 🚀 Project Structure
+- [Project 1](link-to-project-1): Description of project 1.
+- [Project 2](link-to-project-2): Description of project 2.
+- [Project 3](link-to-project-3): Description of project 3.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Skills
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+These are some of the skills I have acquired:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- Skill 1
+- Skill 2
+- Skill 3
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Contact
 
-Any static assets, like images, can be placed in the `public/` directory.
+Feel free to reach out to me via email at [email@example.com](mailto:email@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile).
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+🚀 Let's connect and collaborate on exciting projects!

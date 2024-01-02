@@ -1,5 +1,115 @@
 ---
+import "../styles/global.css";
 
+const work = [
+	[
+		"SparkleTech",
+		"google.com",
+		"(summer 2023 - present):",
+		"Spearheading the Android app development, contributing to features that resonate with millions of users on a regular basis.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+	[
+		"TechHub",
+		"google.com",
+		"(summer 2021 - present):",
+		"Troubleshooting and enhancing the user experience of the TechHub platform.",
+	],
+];
+
+const projects = [
+	[
+		"CodeConnect",
+		"github.com/yashd-dev/CodeConnect",
+		"A Live Coding Platform for Developers to connect and Empower Each Other!",
+	],
+	[
+		"AwesomeApp",
+		"github.com/yourusername/AwesomeApp",
+		"An incredible application that does amazing things.",
+	],
+	[
+		"DataExplorer",
+		"github.com/yourusername/DataExplorer",
+		"Explore and analyze datasets with ease.",
+	],
+	[
+		"TravelBuddy",
+		"github.com/yourusername/TravelBuddy",
+		"Your perfect companion for planning and documenting your travels.",
+	],
+	[
+		"EcoFriendly",
+		"github.com/yourusername/EcoFriendly",
+		"An app promoting and tracking eco-friendly practices.",
+	],
+	[
+		"HealthTracker",
+		"github.com/yourusername/HealthTracker",
+		"Track your fitness and health goals effortlessly.",
+	],
+	[
+		"RecipeMaster",
+		"github.com/yourusername/RecipeMaster",
+		"Discover, save, and share your favorite recipes.",
+	],
+	[
+		"GameZone",
+		"github.com/yourusername/GameZone",
+		"A gaming platform for gamers, by gamers.",
+	],
+	[
+		"BudgetBuddy",
+		"github.com/yourusername/BudgetBuddy",
+		"Manage your finances and budget like a pro.",
+	],
+	[
+		"ArtGallery",
+		"github.com/yourusername/ArtGallery",
+		"A virtual gallery showcasing exquisite artworks.",
+	],
+];
 ---
 
 <html lang="en">
@@ -8,9 +118,94 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>My Sundar Portfolio</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body
+		class="dark:bg-[#111] dark:text-[#f5f5f4] grain min-h-screen flex justify-center items-center selection:bg-red-300 selection:text-black"
+	>
+		<ul
+			class="hidden xl:block  fixed inset-0 top-[40vh] left-[10vw] max-w-max max-h-[25vh] p-4 border-r-2 space-y-5 animate-fade-right animate-once animate-ease-in-out"
+		>
+			<li>
+				<a href="#hw">Who am I?</a>
+			</li>
+			<li>
+				<a href="#hw">My work</a>
+			</li>
+			<li>
+				<a href="#hw">My Projects</a>
+			</li>
+			<li>
+				<a href="#hw">My Blogs</a>
+			</li>
+		</ul>
+		<section
+			class="w-full max-w-2xl h-full px-6 mt-32 mb-10 animate-fade-up animate-once animate-ease-in-out"
+		>
+			<h1 class="text-3xl font-bold py-4" id="hw">
+				Hello World, I'm Jane Doe.
+			</h1>
+			<div class="flex flex-col sm:flex-row justify-between">
+				<span>
+					<p class="text-md py-4 font-light sm:max-w-[45ch]">
+						I'm thrilled to share my journey and experiences in the
+						tech world. Currently, I'm immersed in an internship at
+						SparkleTech, contributing to the development of
+						cutting-edge mobile applications. Simultaneously, I wear
+						the hat of a support engineer at TechHub, where I
+						troubleshoot and enhance the user experience.
+					</p>
+				</span>
+				<div
+					class="bg-white max-w-max max-h-36 p-2 rounded-lg shadow-sm ring-1 ring-gray-200/50 -rotate-2 border-4 border-red-500 order-first sm:order-last animate-wiggle animate-infinite animate-duration-1000 animate-delay-1000 animate-ease-in-out animate-normal"
+				>
+					<img
+						src="/thispersondoesnotexist.jpg"
+						alt=""
+						class="bg-gray-200 rounded-md w-20 sm:w-24"
+					/>
+					<p class="mt-1 font-serif text-center dark:text-black">
+						meeeeee
+					</p>
+				</div>
+			</div>
+
+			<h2 class="text-3xl font-bold py-4 pt-4">My Work Experience</h2>
+
+			{
+				work.map((key) => (
+					<ul class="list-disc pl-5">
+						<li class="font-thin py-3">
+							<a
+								href={key[1]}
+								target="_blank"
+								class="hover:opacity-70 font-semibold underline underline-offset-4 decoration-2 decoration-red-400 hover:decoration-white transition duration-200 ease"
+							>
+								{key[0]}
+							</a>
+							{key[2]} : {key[3]}
+						</li>
+					</ul>
+				))
+			}
+
+			<h2 class="text-3xl font-bold py-4 pt-4">My Side Projects 👷‍♂️</h2>
+			<ul class="list-disc pl-5">
+				{
+					projects.map((key) => (
+						<li class="font-thin py-3">
+							<a
+								href={key[1]}
+								target="_blank"
+								class="hover:opacity-70 font-semibold underline underline-offset-4 decoration-2 decoration-red-400 hover:decoration-white transition duration-200 ease"
+							>
+								{key[0]}
+							</a>
+							{key[2]}
+						</li>
+					))
+				}
+			</ul>
+		</section>
 	</body>
 </html>
